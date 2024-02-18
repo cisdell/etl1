@@ -35,6 +35,8 @@ services:
     depends_on:
       - source_postgres
       - destination_postgres
+  dbt:
+    image: ghcr.io/dbt-labs/dbt-postgres:1.47
 
 networks:
   elt_network:
